@@ -1,8 +1,8 @@
 import React from "react";
-import "./Backdrop.module.css";
+import classes from  "./Backdrop.module.css";
 
 const Backdrop = props =>{
-    const cssClasses=["Backdrop", props.show? "BackdropOpen" : "BackdropClosed"]
+    const cssClasses=[classes.Backdrop, props.show? classes.BackdropOpen : classes.BackdropClosed]
 
     return <div className={cssClasses.join(" ")}> </div>
     
